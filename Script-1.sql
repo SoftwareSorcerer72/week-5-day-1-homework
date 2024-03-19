@@ -9,10 +9,10 @@ WHERE last_name = 'Wahlberg';
 
 
 -- question 2
-SELECT count(amount)
+SELECT count(*)
 FROM payment 
-WHERE amount >= 3 AND amount <= 8;
--- answer 7528
+WHERE amount between 3.99 AND 5.99;
+-- answer 5607
 
 
 
