@@ -17,10 +17,11 @@ WHERE amount between 3.99 AND 5.99;
 
 
 -- question 3
-SELECT *
+SELECT film_id, count(*) AS film_numbers
 FROM inventory
-WHERE inventory_id = '7';
--- answer is Academy Dinosaur
+GROUP BY film_id 
+HAVING count(*) = '7';
+-- answer is 116
 
 
 
