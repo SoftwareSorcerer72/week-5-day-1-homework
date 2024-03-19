@@ -85,4 +85,4 @@ SELECT rating, Count(*) AS ratings_total
 FROM film
 GROUP BY rating
 ORDER BY ratings_total DESC;
--- PG13 with 223
+-- PG13 with 223 and 5 rating categories
